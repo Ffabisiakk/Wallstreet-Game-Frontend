@@ -1,8 +1,7 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {endpoint} from './globals';
 import {Observable, of} from 'rxjs';
-import {User} from './user';
 import {catchError} from 'rxjs/operators';
 import {Rate} from './rate';
 
@@ -17,10 +16,10 @@ export class RateService {
     this.rateUrl = endpoint + 'rates';
   }
 
-  getRate(date: string): Observable<User> {
+  getRate(date: string): Observable<Rate> {
     const url = `${this.rateUrl}/${date}`;
-    return this.http.get<User>(url).pipe(
-      catchError(this.handleError<User>())
+    return this.http.get<Rate>(url).pipe(
+      catchError(this.handleError<Rate>())
     );
   }
 
