@@ -1,9 +1,9 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
-import {endpoint} from './globals';
+import {endpoint} from '../globals';
 import {Observable, of} from 'rxjs';
 import {catchError} from 'rxjs/operators';
-import {Rate} from './rate';
+import {Rate} from '../rates/rate';
 
 @Injectable({
   providedIn: 'root'

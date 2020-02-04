@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
-import {endpoint} from './globals';
+import {endpoint} from '../globals';
 import {Observable, of} from 'rxjs';
-import {User} from './user';
+import {User} from '../user';
 import {catchError, tap} from 'rxjs/operators';
 
 @Injectable({
