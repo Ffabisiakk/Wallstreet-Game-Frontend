@@ -1,0 +1,15 @@
+.rates-container {
+ padding-top: 30px;
+}
+
+.list-block {
+  display: inline-grid;
+}
+
+li {
+  display: block;
+  list-style: none;
+  text-align: right;
+  font-family: monospace;
+  font-size: 15px;
+}

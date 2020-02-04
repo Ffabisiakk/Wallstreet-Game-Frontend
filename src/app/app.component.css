@@ -1,27 +1,20 @@
-h1 {
-  font-size: 1.2em;
-  margin-bottom: 0;
+.head {
+  background: #23272a;
 }
-h2 {
-  font-size: 2em;
-  margin-top: 0;
-  padding-top: 0;
-}
-nav a {
-  padding: 5px 10px;
-  text-decoration: none;
-  margin-top: 10px;
+
+a {
+  border: 3px solid #fff;
+  border-radius: 30px;
+  color: #fff;
+  font: 900 14px proxima-nova, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  padding: 20px;
+  cursor: pointer;
+  margin: 50px 2%;
   display: inline-block;
-  background-color: #eee;
-  border-radius: 4px;
 }
-nav a:visited, a:link {
-  color: #334953;
-}
-nav a:hover {
-  color: #039be5;
-  background-color: #cfd8dc;
-}
-nav a.active {
-  color: #039be5;
+
+nav {
+  text-align: center;
 }

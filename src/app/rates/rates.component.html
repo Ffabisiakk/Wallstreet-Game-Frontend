@@ -1,6 +1,21 @@
-<h2>Rate</h2>
-<p>
-  Data: {{rate.date}}
-  Bitcoin: {{rate.bitcoinRate}}
-  Euro: {{rate.eurRate}}
-</p>
+<h2>Rates: {{id}}</h2>
+<label class="date-picker">
+  <input [(ngModel)]="date" type="date" (change)="setDate()"/>
+  <input [(ngModel)]="hour" type="number" (change)="setDate()"/>
+</label>
+<div class="rates-container">
+  <div class="list-block">Buy:
+    <ul>
+      <li *ngFor="let rate of rate.purchaseRates">
+        {{rate.name}} {{rate.amount | number: '0.9'}}
+      </li>
+    </ul>
+  </div>
+  <div class="list-block">Sell:
+    <ul>
+      <li *ngFor="let rate of rate.saleRates">
+        {{rate.name}} {{rate.amount | number: '0.9'}}
+      </li>
+    </ul>
+  </div>
+</div>
