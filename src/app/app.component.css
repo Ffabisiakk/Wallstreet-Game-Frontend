@@ -1,20 +1,19 @@
 .head {
   background: #23272a;
 }
-
 a {
-  border: 3px solid #fff;
+  border: 3px solid #f4f5e6;
   border-radius: 30px;
-  color: #fff;
+  color: #f4f5e6;
   font: 900 14px proxima-nova, sans-serif;
   text-transform: uppercase;
   letter-spacing: 4px;
   padding: 20px;
   cursor: pointer;
-  margin: 50px 2%;
+  margin: 30px 1%;
   display: inline-block;
 }
-
 nav {
   text-align: center;
 }
+

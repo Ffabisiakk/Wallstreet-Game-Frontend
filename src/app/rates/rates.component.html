@@ -1,20 +1,21 @@
-<h2>Rates: {{id}}</h2>
-<label class="date-picker">
-  <input [(ngModel)]="date" type="date" (change)="setDate()"/>
-  <input [(ngModel)]="hour" type="number" (change)="setDate()"/>
-</label>
+<div class="date-container">
+  <label>
+    <input [(ngModel)]="hour" class="hour" type="number" min="0" max="23" (change)="setDate()"/>
+    <input [(ngModel)]="date" class="date" type="date" (change)="setDate()"/>
+  </label>
+</div>
 <div class="rates-container">
-  <div class="list-block">Buy:
+  <div class="list-block">Buy
     <ul>
       <li *ngFor="let rate of rate.purchaseRates">
-        {{rate.name}} {{rate.amount | number: '0.9'}}
+        {{rate.name}} <span>{{rate.amount | number: '0.9'}}</span>
       </li>
     </ul>
   </div>
-  <div class="list-block">Sell:
+  <div class="list-block">Sell
     <ul>
       <li *ngFor="let rate of rate.saleRates">
-        {{rate.name}} {{rate.amount | number: '0.9'}}
+        {{rate.name}} <span>{{rate.amount | number: '0.9'}}</span>
       </li>
     </ul>
   </div>

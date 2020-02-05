@@ -1,15 +1,53 @@
 .rates-container {
- padding-top: 30px;
+  text-align: center;
+}
+.date-container {
+  text-align: center;
+}
+
+.date {
+  font-size: 20px;
+  width: 170px;
+  background: #fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  90% 50% no-repeat ;
+}
+
+.hour {
+  text-align: center;
+  font-size: 20px;
+  width: 40px;
+  background-color: #fff;
+}
+
+label {
+  border: 5px solid #23272a;
+  border-radius: 12px;
+  padding: 10px 175px;
+  margin: 20px;
+  display: inline-block;
+  position: center;
+  background-color: #fff;
 }
 
 .list-block {
   display: inline-grid;
+  padding: 20px 30px;
+  margin: 0 1%;
+  border: 5px solid #23272a;
+  border-radius: 12px;
+  background-color: white;
+  width: 200px;
+  font-size: 40px;
+  text-transform: uppercase;
 }
 
 li {
   display: block;
   list-style: none;
-  text-align: right;
+  text-align: left;
   font-family: monospace;
   font-size: 15px;
+}
+
+span {
+  float: right;
 }

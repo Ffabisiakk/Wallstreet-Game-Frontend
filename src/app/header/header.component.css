@@ -1,9 +1,9 @@
 * {
-  font-size: 40px;
+  font-size: 60px;
   text-align: center;
-  padding-top: 40px;
-  letter-spacing: 10px;
+  padding-top: 20px;
+  letter-spacing: 20px;
   text-transform: uppercase;
   text-effect: engrave;
-  color: #fff;
+  color: #f4f5e6;
 }
