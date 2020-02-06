@@ -1,20 +1,21 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { ClockComponent } from './clock/clock.component';
-import { ProfileHooverComponent } from './profile-hoover/profile-hoover.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { ExchangeComponent } from './exchange/exchange.component';
-import { RatesComponent } from './rates/rates.component';
-import { HistoryComponent } from './history/history.component';
-import { LeaderboardComponent } from './leaderboard/leaderboard.component';
-import { AboutComponent } from './about/about.component';
-import { FooterComponent } from './footer/footer.component';
+import {AppRoutingModule} from './app-routing.module';
+import {AppComponent} from './app.component';
+import {HeaderComponent} from './component/header/header.component';
+import {ClockComponent} from './component/clock/clock.component';
+import {ProfileHooverComponent} from './component/profile-hoover/profile-hoover.component';
+import {DashboardComponent} from './component/dashboard/dashboard.component';
+import {ExchangeComponent} from './component/exchange/exchange.component';
+import {RatesComponent} from './component/rates/rates.component';
+import {HistoryComponent} from './component/history/history.component';
+import {LeaderboardComponent} from './component/leaderboard/leaderboard.component';
+import {AboutComponent} from './component/about/about.component';
+import {FooterComponent} from './component/footer/footer.component';
 import {HttpClientModule} from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
+import {PostComponent} from './post/post.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import {FormsModule} from '@angular/forms';
     HistoryComponent,
     LeaderboardComponent,
     AboutComponent,
-    FooterComponent
+    FooterComponent,
+    PostComponent
   ],
   imports: [
     HttpClientModule,
@@ -39,4 +41,4 @@ import {FormsModule} from '@angular/forms';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

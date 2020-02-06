@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {RateService} from '../service/rate.service';
-import {Rate} from './rate';
+import {RateService} from '../../service/rate.service';
+import {Rate} from '../../dto/rate';
 
 @Component({
   selector: 'app-rates',

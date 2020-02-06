@@ -3,7 +3,7 @@ import {HttpClient} from '@angular/common/http';
 import {endpoint} from '../globals';
 import {Observable, of} from 'rxjs';
 import {catchError} from 'rxjs/operators';
-import {Rate} from '../rates/rate';
+import {Rate} from '../dto/rate';
 
 @Injectable({
   providedIn: 'root'
