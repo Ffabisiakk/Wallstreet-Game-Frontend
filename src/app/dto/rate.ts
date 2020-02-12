@@ -1,10 +1,6 @@
 export class Rate {
   date: string;
-  purchaseRates: RateLine[];
-  saleRates: RateLine[];
+  purchaseRates: Map<string, number>;
+  saleRates: Map<string, number>;
 }
 
-export class RateLine {
-  name: string;
-  amount: number;
-}

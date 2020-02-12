@@ -7,15 +7,15 @@
 <div class="rates-container">
   <div class="list-block">Buy
     <ul>
-      <li *ngFor="let rate of rate.purchaseRates">
-        {{rate.name}} <span>{{rate.amount | number: '0.9'}}</span>
+      <li *ngFor="let rate of rate.purchaseRates | keyvalue">
+        {{rate.key}} <span>{{rate.value | number: '0.9'}}</span>
       </li>
     </ul>
   </div>
   <div class="list-block">Sell
     <ul>
-      <li *ngFor="let rate of rate.saleRates">
-        {{rate.name}} <span>{{rate.amount | number: '0.9'}}</span>
+      <li *ngFor="let rate of rate.saleRates | keyvalue">
+        {{rate.key}} <span>{{rate.value | number: '0.9'}}</span>
       </li>
     </ul>
   </div>

@@ -13,12 +13,13 @@ export class RatesComponent implements OnInit {
   date: string;
   hour: number;
 
-  constructor(private rateService: RateService) { }
+  constructor(private rateService: RateService) {
+    this.date = '2020-02-11';
+    this.hour = 17;
+  }
 
   ngOnInit() {
-    this.getRates('2020-02-04 12:00');
-    this.date = '2020-02-04';
-    this.hour = 12;
+
     this.setDate();
   }
 
@@ -30,4 +31,5 @@ export class RatesComponent implements OnInit {
     this.id = this.date + ' ' + this.hour + ':00';
     this.getRates(this.id);
   }
+
 }
