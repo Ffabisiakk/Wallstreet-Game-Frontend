@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {UserService} from '../../service/user.service';
 
 @Component({
   selector: 'app-leaderboard',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LeaderboardComponent implements OnInit {
 
-  constructor() { }
+  leaderboard: Map<string, number>;
+
+  constructor(private userService: UserService) { }
 
   ngOnInit() {
+    this.setLeaderBoard();
   }
 
+  setLeaderBoard(): void {
+    this.userService.getLeaderboard().subscribe(map => this.leaderboard = map);
+  }
+
+  asIsOrder(a, b) {
+    return 0;
+  }
 }

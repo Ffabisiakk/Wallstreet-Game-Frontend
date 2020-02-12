@@ -1,0 +1,40 @@
+.board-container {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.list-block {
+  display: inline-grid;
+  padding: 20px 30px;
+  margin: 0 1%;
+  border: 5px solid #23272a;
+  border-radius: 12px;
+  background-color: white;
+  width: 600px;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+li {
+  display: block;
+  list-style: none;
+  text-align: left;
+  font-family: monospace;
+  font-size: 15px;
+}
+
+span.to-right {
+  float: right;
+}
+
+div.winner {
+  font-size: 25px;
+  text-decoration: black;
+  margin-bottom: 10px;
+}
+
+img {
+  float: left;
+  height: 30px;
+  width: 30px;
+}

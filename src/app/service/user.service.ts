@@ -30,6 +30,13 @@ export class UserService {
     );
   }
 
+  getLeaderboard(): Observable<Map<string, number>> {
+    const url = `${this.usersUrl}/leaderboard`;
+    return this.http.get<Map<string, number>>(url).pipe(
+      catchError(this.handleError<Map<string, number>>())
+    );
+  }
+
   addUser(user: User): Observable<User> {
     return this.http.post<User>(this.usersUrl, user)
       .pipe(

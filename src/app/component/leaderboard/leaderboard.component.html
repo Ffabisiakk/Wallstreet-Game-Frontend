@@ -1,1 +1,17 @@
-<p>leaderboard works!</p>
+<div class="board-container">
+  <div class="list-block">
+    <ul>
+      <li *ngFor="let entry of leaderboard | keyvalue: asIsOrder; let i = index">
+        <div class="winner" *ngIf="i == 0; else elseBlock">
+          <img src="../../../assets/img/crown.png" alt="">
+          {{entry.key}} <span class="to-right">{{entry.value | number: '0.2'}}</span>
+
+        </div>
+        <ng-template #elseBlock>
+          {{entry.key}} <span class="to-right">{{entry.value | number: '0.2'}}</span>
+        </ng-template>
+
+      </li>
+    </ul>
+  </div>
+</div>
