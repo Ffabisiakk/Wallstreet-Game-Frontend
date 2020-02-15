@@ -6,4 +6,15 @@
   text-transform: uppercase;
   text-effect: engrave;
   color: #f4f5e6;
+  display: inline-block;
+}
+
+p {
+  display: inline-flex;
+}
+
+a {
+  float: right;
+  font-size: 20px;
+
 }

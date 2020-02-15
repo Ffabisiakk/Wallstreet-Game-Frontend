@@ -16,6 +16,7 @@ import {FooterComponent} from './component/footer/footer.component';
 import {HttpClientModule} from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
 import {PostComponent} from './post/post.component';
+import { LoginComponent } from './component/login/login.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import {PostComponent} from './post/post.component';
     LeaderboardComponent,
     AboutComponent,
     FooterComponent,
-    PostComponent
+    PostComponent,
+    LoginComponent
   ],
   imports: [
     HttpClientModule,
